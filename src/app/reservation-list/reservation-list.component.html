@@ -1,7 +1,7 @@
 <app-home></app-home>
 <h3 class="mt-4 mb-2">Reservation List</h3>
 
-<table class="table table-striped">
+<table class="table table-striped" *ngIf="reservations.length; else noReservation">
     <thead>
         <tr>
             <th>Guest</th>
@@ -27,10 +27,6 @@
         </tr>
     </tbody>
 </table>
-
-<ul *ngIf="reservations.length; else noReservation">
-   
-</ul>
 
 <ng-template #noReservation>
     <p>No Reservation available!</p>
