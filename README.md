@@ -10,4 +10,4 @@
 * Redirecting user using router navigate method
 * Adding routes with paramters and extracting parameter values using ActivatedRoute
 * Using components of one module in other modules
-* Styling using bootstrap
+* Styling using bootstrap.
